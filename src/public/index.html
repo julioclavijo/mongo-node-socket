@@ -7,9 +7,26 @@
     <link  rel="stylesheet" href="/css/spectre-icons.min.css">
     <title>Aplicacion con Node.Js Socket y Mongo DB</title>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
 </head>
 <body>
-    <h1>Demo</h1>
+    <main class="container">
+        <section class="columns">
+            <div class="column col-mx-auto col-8">
+                <form action="" id="noteForm">
+                    <div class="form-group">
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="10" class="form-input"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
