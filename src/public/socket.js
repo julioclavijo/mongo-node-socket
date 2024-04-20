@@ -5,3 +5,11 @@ export const loadNotes = () => {
         console.log(data);
     })
 }
+
+export const saveNote = (title, description) => {
+    socket.emit('savenote', {
+        title,
+        description
+    })  
+}
+

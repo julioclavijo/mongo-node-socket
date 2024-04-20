@@ -1,6 +1,6 @@
-import {} from ''
+import { saveNote } from './socket.js'
 
-export const onHandleSubmit = (event) => {
-    e.preventDefault()
-    const formData = new FormData(noteForm)
-}
+export const onHandleSubmit = (e) => {
+    e.preventDefault();
+    saveNote(noteForm['title'].value, noteForm['description'].value);
+};
