@@ -12,6 +12,7 @@
   "author": "julioclavijo",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.24.4",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongoose": "^8.3.1",
@@ -22,6 +23,7 @@
     "@babel/cli": "^7.24.1",
     "@babel/core": "^7.24.4",
     "@babel/node": "^7.23.9",
+    "@babel/plugin-transform-runtime": "^7.24.3",
     "@babel/preset-env": "^7.24.4",
     "nodemon": "^3.1.0"
   }
