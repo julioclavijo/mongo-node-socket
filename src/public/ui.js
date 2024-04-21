@@ -13,8 +13,8 @@ const noteUI = note => {
     <div class="card mb-10">
         <div class="card-header">
             <div class="card-title h5">${note.title}
-            <button class="btn btn-primary float-right update" data-id="${note._id}"><i class="icon icon-edit"></i></button>
-            <button class="btn btn-secondary float-right delete" data-id="${note._id}"><i class="icon icon-delete"></i></button>
+            <button class="btn btn-primary float-right update ml-10" data-id="${note._id}"><i class="icon icon-edit"></i></button>
+            <button class="btn btn-secondary float-right delete ml-10" data-id="${note._id}"><i class="icon icon-delete"></i></button>
             </div>
             <div class="card-body">${note.description}</div>
         </div>
