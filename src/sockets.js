@@ -7,17 +7,17 @@ export default (io) => {
 
         const emitNotes = async () => {
             const notes = await Note.find();
-            io.emit('loadnotes', notes);
+            io.emit('server:loadnotes', notes);
         }
         emitNotes()
 
-        socket.on('savenote', async (data) => {
+        socket.on('client:savenote', async (data) => {
             const newNote = new Note({
                 title: data.title,
                 description: data.description
             })
             const savedNote = await newNote.save();
-            console.log(savedNote);
+            socket.emit('server:newnote', savedNote)
         })
     })
 }

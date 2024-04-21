@@ -8,12 +8,24 @@
     <title>Aplicacion con Node.Js Socket y Mongo DB</title>
     <script src="/socket.io/socket.io.js"></script>
     <script src="main.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="container">
         <section class="columns">
             <div class="column col-mx-auto col-6">
-                <h1>Aplicacion con Node.Js Socket y Mongo DB</h1>
+                <h1>Notas</h1>
+                <div class="panel notas">
+                    <div class="panel-header">
+                      <div class="panel-title">Notas</div>
+                    </div>
+                    <div class="panel-body" id="notes">
+                      <!-- contents -->
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-6">
+                <h2><i class="icon icon-plus"></i>Agregar Nota</h2>
                 <form id="noteForm">
                     <div class="form-group">
                         <input type="text" class="form-input" id="title">
