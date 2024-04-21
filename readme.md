@@ -1,5 +1,3 @@
-Aquí tienes un archivo README.md básico para tu aplicación de notas:
-
 # Aplicación de Notas
 
 Esta es una aplicación simple de notas que utiliza Node.js, Socket.io y MongoDB.
